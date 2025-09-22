@@ -11,8 +11,10 @@ services:
       - WAHA_BASE_URL= https://waha.raulnq.win:3000
       - WAHA_DASHBOARD_ENABLED= True
       #- WAHA_DASHBOARD_USERNAME= admin
+      #- WAHA_DASHBOARD_PASSWORD= admin
       - WHATSAPP_SWAGGER_ENABLED= True
       #- WHATSAPP_SWAGGER_USERNAME= admin
+      #- WHATSAPP_SWAGGER_PASSWORD=admin
       - WHATSAPP_DEFAULT_ENGINE= WEBJS
       #- WAHA_API_KEY= "super-secret-api-key"
       - WAHA_LOG_LEVEL= "info"
