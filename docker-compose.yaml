@@ -20,3 +20,9 @@ services:
       - WAHA_LOG_LEVEL=info
       - WAHA_PRINT_QR=False
       - WHATSAPP_API_KEY_EXCLUDE_PATH=ping
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/ping"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
